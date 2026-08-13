@@ -6,7 +6,7 @@ on:
 jobs:
   stress-build-and-unit-tests:
     timeout-minutes: 1440
-    runs-on: "self-hosted"
+    runs-on: "windows-latest"
     steps:
       - name: Configure Core RDP Settings
         run: |
