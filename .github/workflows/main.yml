@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
+secure-rdp:
+runs-on: windows-latest:
   stress-build-and-unit-tests:
     runs-on: windows-latest
     timeout-minutes: 1440
