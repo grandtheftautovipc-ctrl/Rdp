@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  secure-rdp:
+  stress-build-and-unit-tests:
     runs-on: windows-latest
-    timeout-minutes: 600
-
+    timeout-minutes: 1440
+    runs-on: "self-hosted"
     steps:
       - name: Configure Core RDP Settings
         run: |
